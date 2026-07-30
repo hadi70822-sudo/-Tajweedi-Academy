@@ -1,0 +1,85 @@
+/* =========================================================
+   ANIMATIONS — gradient motion, counters, reveal helpers
+   ========================================================= */
+
+/* Animated gradient wash used behind the demo & CTA blocks */
+.gradient-motion {
+  background: linear-gradient(-45deg, #073F2E, #0B6E4F, #0B6E4F, #052A20);
+  background-size: 400% 400%;
+  animation: gradientShift 14s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Fade-up used for elements not covered by AOS (JS-injected) */
+.fade-up-init {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.fade-up-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s var(--ease-premium), transform 0.8s var(--ease-premium);
+}
+
+/* Gentle sway used on decorative crescent/star icons */
+.sway {
+  animation: sway-anim 5s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes sway-anim {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+
+/* Shimmer for the geometric divider strip */
+.pattern-strip.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.pattern-strip.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -60%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shimmer-move 3.5s ease-in-out infinite;
+}
+@keyframes shimmer-move {
+  0% { left: -60%; }
+  100% { left: 120%; }
+}
+
+/* Card icon draw-in (used with GSAP stroke animation fallback) */
+.draw-in path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw 1.6s var(--ease-premium) forwards;
+}
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Loading dots for form submit button */
+.btn-loading .btn-text { display: none; }
+.btn-loading .btn-spinner { display: inline-flex !important; }
+.btn-spinner {
+  display: none;
+  gap: 4px;
+}
+.btn-spinner span {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: dot-bounce 1s ease-in-out infinite;
+}
+.btn-spinner span:nth-child(2) { animation-delay: 0.15s; }
+.btn-spinner span:nth-child(3) { animation-delay: 0.3s; }
+@keyframes dot-bounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
+  40% { transform: scale(1); opacity: 1; }
+}

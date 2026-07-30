@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Artifacts
+.artifacts/
+task.artifact.md
+walkthrough.artifact.md
+implementation_plan.artifact.md
+audit_report.artifact.md
+qa_audit_report.artifact.md
+refinement_plan.artifact.md
+email_fix_plan.artifact.md

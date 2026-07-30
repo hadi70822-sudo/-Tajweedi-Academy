@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0B6E4F" rx="80" />
+  <!-- Mosque Background (Beige #D8C7A0) -->
+  <path fill="#D8C7A0" d="M100 200h40v200h-40z M360 200h40v200h-40z" />
+  <path fill="#D8C7A0" d="M90 190c0-30 30-60 40-80 10 20 40 50 40 80h-80z M350 190c0-30 30-60 40-80 10 20 40 50 40 80h-80z" />
+  <path fill="#D8C7A0" d="M180 350v-100c0-60 50-110 70-110s70 50 70 110v100z" opacity="0.9" />
+  <path fill="#D8C7A0" d="M180 350h140v20H180z" />
+  <path fill="#C7A34B" d="M250 110a30 30 0 1 0 0 60 24 24 0 0 1 0-60z" />
+
+  <!-- Rehal (X shape) -->
+  <path fill="#C7A34B" stroke="#052A20" stroke-width="4" d="M100 380c50 0 150-60 300-40l-20 50c-150-10-250 30-280 30z" />
+  <path fill="#C7A34B" stroke="#052A20" stroke-width="4" d="M400 380c-50 0-150-60-300-40l20 50c150-10 250 30 280 30z" />
+
+  <path fill="#2A9D8F" stroke="#052A20" stroke-width="4" d="M120 340c40 0 130-50 260-30l-15 45c-130-10-220 30-245 30z" />
+  <path fill="#2A9D8F" stroke="#052A20" stroke-width="4" d="M380 340c-40 0-130-50-260-30l15 45c130-10 220 30 245 30z" />
+
+  <circle cx="250" cy="365" r="10" fill="white" />
+</svg>
